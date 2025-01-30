@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Photo Gallery</h1>
+
+    <div class="categories">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="#" onclick="filterImages('Nature')">Nature</a></li>
+            <li><a href="#" onclick="filterImages('Portraits')">Portraits</a></li>
+            <li><a href="#" onclick="filterImages('Architecture')">Architecture</a></li>
+            <li><a href="#" onclick="filterImages('Travel')">Travel</a></li>
+        </ul>
+    </div>
+
+    <div class="slideshow-container">
+    </div> 
+    <div class="dots-container">
+    </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    <div class="image-grid"></div> 
+
+    <script src="script.js"></script>
+
+</body>
+</html>
